@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  background-color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.logo a {
+  font-size: 20px;
+  color: white;
+}
+
+.navbar {
+  background-color: white;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  list-style: none;
+}
+.navbar li a {
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  font-size: 18px;
+  font-weight: 550;
+}
+.navbar .icons {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(241, 239, 239);
+}
+.navbar .icons .card {
+  padding: 10px;
+}
+.navbar .icons img {
+  border: 2px solid burlywood;
+  border-radius: 50px;
+  width: 50px;
+}
+.navbar .icons p {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.hero {
+  height: 90vh;
+  background: url(/Bullet_Lipstick-HP-_Desktop_x800.webp) no-repeat center center/cover;
+}
+
+.second-page h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.second-page p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+.second-page .button {
+  text-align: center;
+  margin-top: 40px;
+}
+.second-page .btn {
+  border: 2px solid black;
+  border-radius: 25px;
+  text-align: center;
+  align-items: center;
+  padding: 12px;
+  background-color: black;
+  color: white;
+}
+.second-page a:hover {
+  color: black;
+  background-color: white;
+}
+.second-page a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.container img {
+  border-radius: 17px;
+  height: 200px;
+  width: 242px;
+}
+
+.container p {
+  color: white;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container h2 {
+  color: white;
+  margin-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container p1 {
+  color: white;
+  margin-left: 10px;
+}
+
+.card1 {
+  border: 2px solid burlywood;
+  border-radius: 18px;
+  height: 450px;
+  width: 250px;
+  background-color: black;
+  justify-content: space-around;
+}
+
+.btnn {
+  border: 2px solid burlywood;
+  border-radius: 20px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  margin-left: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: black;
+  background-color: rgb(229, 178, 51);
+}
+
+.btnn:hover {
+  color: white;
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */
