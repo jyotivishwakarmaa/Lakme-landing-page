@@ -27,6 +27,13 @@
   justify-content: space-around;
   align-items: center;
   padding: 15px;
+  position: sticky;
+  height: 70px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+
 
 a {
     font-size: 18px;
@@ -40,7 +47,10 @@ a {
 }
 .navbar {
   background-color: white;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  gap: 0;
+
 
   ul {
     display:flex;
@@ -88,6 +98,7 @@ a {
 
 .hero {
   height: 80vh;
+  margin-top: 130px;
   background: url(/Bullet_Lipstick-HP-_Desktop_x800.webp) no-repeat center
     center / cover;
 }
@@ -128,11 +139,12 @@ a {
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 70px;
   // height: 60px;
-  // gap: 20px;
+  gap: 20px;
+  margin-left: 40px;
   justify-content: space-around;
 }
 .container img {
@@ -225,10 +237,11 @@ a {
 }
 .container1{
   margin-top: 60px;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  margin-left: 180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  // margin-left: 50px;
+  justify-content: space-around;
   
 }
 .container1 img {
@@ -237,7 +250,7 @@ a {
   width: 280px;
 }
 .card2 {
-  border: 2px solid burlywood;
+  // border: 2px solid burlywood;
   border-radius: 18px;
 }
 .fifthpage{
@@ -380,9 +393,10 @@ h3 span{
 
 
 .container4 {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 70px;
+  margin-left: 50px;
   // height: 60px;
   // gap: 20px;
   justify-content: space-around;
@@ -498,10 +512,11 @@ h3 span{
 }
 
 .box{
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 70px;
   justify-content: space-around;
+  margin-left: 55px;
 }
 .box1{
    border: 2px solid burlywood;
@@ -611,4 +626,191 @@ p span2 {
   font-size: 12px;
   font-weight: 500;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width:786px) {
+  
+  .navbar ul{
+    padding: 12px;
+    gap: 45px;
+    background-color: #fff;
+  }
+  .hero{
+    height: 60vh;
+  }
+
+  .navbar .icons{
+    padding-left: 18px;
+    background-color: #fff;
+  }
+  .container{
+     display: grid;
+     grid-template-columns: 1fr 1fr ; 
+     margin-left: 90px;
+     gap: 20px;
+  }
+  .container1{
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  .container2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 90px;
+    gap: 20px;
+  }
+   .container3{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 90px;
+    gap: 20px;
+  }
+   .container4{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+     margin-left: 90px;
+     gap: 20px;
+  }
+  .box{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 215px;
+    gap: 30px;
+
+  }
+  .maincont{
+    gap: 0px;
+  }
+  .footer-content1 .btnnn{
+    margin-left: 50px;
+  }
+  .sixpage{
+    height: 40vh;
+  }
+  .fifthpage h1{
+    font-size: 15px;
+  }
+  .tenpage h2 {
+    font-size: 20px;
+  }
+  .ninepage{
+    height: 50vh;
+  }
+  .elevenpage h2{
+    font-size: 20px;
+  }
+  .footer img {
+    padding-left: 330px;
+}
+p span2{
+  font-size: 10px;
+}
+.footer p{
+  font-size: 10px;
+}
+.footer-content1 .btnnn {
+        margin-left: 10px;
+    }
+}
+
+
+
+
+
+
+//mobile view
+@media screen and (max-width:425px) {
+  
+  .navbar ul{
+    padding: 10px;
+    gap: 50px;
+    background-color: #fff;
+  }
+  .hero{
+    height: 30vh;
+    margin-top: 195px;
+  }
+  .second-page h2 {
+    font-size: 20px;
+  }
+  .container {
+     display: grid;
+     grid-template-columns: 1fr;
+     margin-left: 50px;
+     gap: 10px;
+}
+.container1{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.fifthpage h1{
+  font-size: 8px;
+}
+.container2{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-right: 80px;
+}
+.container2 img{
+  margin-right: 90px;
+}
+.sixpage{
+  height: 20vh;
+}
+.sevenpage h2{
+  font-size: 13px;
+}
+.container3{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 70px;
+}
+.eightpage h2 {
+  font-size: 14px;
+}
+.eightpage p{
+  font-size: 13px;
+}
+.container4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 60px;
+}
+  .ninepage {
+    height: 30vh;
+    margin-top: 60px;
+}
+    .tenpage h2 {
+        font-size: 11px;
+    }
+    .tenpage h2 {
+        font-size: 14px;
+    }
+    .elevenpage h2 {
+        font-size: 11px;
+    }
+    .elevenpage p {
+    margin-top: 10px;
+    font-size: 12px;
+    margin-bottom: 50px;
+    }
+    .box{
+      margin: 10px;
+    }
+    .footer img {
+        padding-left: 125px;
+    }
+    p span2 {
+        font-size: 7px;
+    }
+    .footer-content1 .btnnn {
+      font-size: 10px;
+      padding: 8px 8px;
+      margin-right:20px ;
+    }
+    .end p{
+      font-size: 6px;
+    }
 }
